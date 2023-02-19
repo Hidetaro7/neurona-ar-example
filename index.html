@@ -16,7 +16,7 @@
 
       <a-nft
         type="nft"
-        url="https://github.com/Hidetaro7/neurona-ar-example/blob/feat/nft/nft/kokutoh"
+        url="/nft/nft/kokutoh2"
         smooth="true"
         smoothCount="10"
         smoothTolerance=".01"
@@ -44,5 +44,10 @@
       </a-light>
       <a-light type="ambient" color="#FFF"> </a-light>
     </a-scene>
+    <script>
+      window.addEventListener("arjs-nft-loaded", (event) => {
+        alert("loaded");
+      });
+    </script>
   </body>
 </html>
